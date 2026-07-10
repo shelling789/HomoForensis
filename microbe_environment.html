@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>환경</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body data-page="microbe-environment">
+  <div class="layout">
+<aside class="sidebar">
+  <div class="logo">
+    <strong>게임 시스템 도감</strong>
+    <span>Production Codex</span>
+  </div>
+  <nav class="nav">
+    <a href="index.html" data-page="index">홈</a>
+    <a href="world.html" data-page="world">스토리</a>
+    <a href="core.html" data-page="core">코어 시스템</a>
+    <a class="sub-nav" href="microbe_system.html" data-page="microbe-system">미생물 시스템</a>
+    <a href="essential.html" data-page="essential">필수요소</a>
+    <a class="sub-nav" href="essential_farm.html" data-page="essential-farm">농장</a>
+    <a class="sub-nav" href="essential_factory.html" data-page="essential-factory">공장</a>
+    <a class="sub-nav" href="essential_shop.html" data-page="essential-shop">상점</a>
+    <a href="production.html" data-page="production">생산방식</a>
+    <a href="start.html" data-page="start">시작 해금</a>
+    <a href="microbe.html" data-page="microbe">미생물 해금</a>
+    <a href="professional.html" data-page="professional">전문서적</a>
+  </nav>
+</aside>
+    <main class="content">
+      <header class="page-head">
+        <p class="kicker">Core System · 필수요소</p>
+        <h1>환경</h1>
+      </header>
+
+      <section class="section">
+        <h2>환경에서의 미생물</h2>
+        <p>환경에는 기본 미생물 상태가 존재합니다.</p>
+        <p>이 미생물 상태는 농장, 공장, 상점이 돌아가는 조건에 영향을 줍니다.</p>
+        <p>예를 들어 어떤 환경은 특정 생산에 유리하고, 어떤 환경은 상품 품질이나 손님 반응에 불리하게 작용할 수 있습니다.</p>
+      </section>
+    </main>
+  </div>
+  <script>
+    const page = document.body.dataset.page;
+    document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('active', a.dataset.page === page));
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+

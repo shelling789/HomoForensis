@@ -1,0 +1,20 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" width="240" height="180">
+  <defs>
+    <linearGradient id="floor" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#8b5737"/><stop offset="1" stop-color="#4a2d24"/></linearGradient>
+    <linearGradient id="wood" x1="0" x2="1"><stop offset="0" stop-color="#d08a45"/><stop offset="1" stop-color="#74401f"/></linearGradient>
+    <linearGradient id="metal" x1="0" x2="1"><stop offset="0" stop-color="#88d9ff"/><stop offset="1" stop-color="#2382b4"/></linearGradient>
+  </defs>
+  <rect width="240" height="180" fill="#2f2f2f"/>
+  <polygon points="34,132 100,92 205,112 134,160" fill="url(#floor)" stroke="#1f1713" stroke-width="3"/>
+  <polygon points="52,88 172,66 196,108 74,132" fill="url(#wood)" stroke="#2b1b12" stroke-width="4"/>
+  <polygon points="56,96 172,76 188,102 75,124" fill="#c57a37" opacity=".95"/>
+  <rect x="74" y="64" width="15" height="62" rx="4" fill="#5a3525"/>
+  <rect x="170" y="50" width="15" height="65" rx="4" fill="#5a3525"/>
+  <polygon points="64,48 170,30 202,54 92,76" fill="#20334a" stroke="#111820" stroke-width="4"/>
+  <polygon points="72,48 170,34 192,53 94,70" fill="#2d9bd3" opacity=".85"/>
+  <rect x="82" y="91" width="28" height="24" rx="5" fill="url(#metal)" stroke="#13425e" stroke-width="3"/>
+  <rect x="122" y="83" width="30" height="28" rx="5" fill="#f2c94c" stroke="#70521a" stroke-width="3"/>
+  <rect x="156" y="88" width="24" height="20" rx="4" fill="#9be071" stroke="#31551f" stroke-width="3"/>
+  <circle cx="100" cy="128" r="7" fill="#151515" opacity=".7"/>
+  <circle cx="154" cy="118" r="7" fill="#151515" opacity=".7"/>
+</svg>

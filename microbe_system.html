@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>미생물 시스템</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body data-page="microbe-system">
+  <div class="layout">
+<aside class="sidebar">
+  <div class="logo">
+    <strong>게임 시스템 도감</strong>
+    <span>Production Codex</span>
+  </div>
+  <nav class="nav">
+    <a href="index.html" data-page="index">홈</a>
+    <a href="world.html" data-page="world">스토리</a>
+    <a href="core.html" data-page="core">코어 시스템</a>
+    <a class="sub-nav" href="microbe_system.html" data-page="microbe-system">미생물 시스템</a>
+    <a href="essential.html" data-page="essential">필수요소</a>
+    <a class="sub-nav" href="essential_farm.html" data-page="essential-farm">농장</a>
+    <a class="sub-nav" href="essential_factory.html" data-page="essential-factory">공장</a>
+    <a class="sub-nav" href="essential_shop.html" data-page="essential-shop">상점</a>
+    <a href="production.html" data-page="production">생산방식</a>
+    <a href="start.html" data-page="start">시작 해금</a>
+    <a href="microbe.html" data-page="microbe">미생물 해금</a>
+    <a href="professional.html" data-page="professional">전문서적</a>
+  </nav>
+</aside>
+    <main class="content">
+      <header class="page-head">
+        <p class="kicker">Core System</p>
+        <h1>미생물 시스템</h1>
+      </header>
+
+      <section class="section">
+        <h2>개요</h2>
+        <p>미생물은 모든 곳에 존재하고, 각각을 평가하는 요소입니다.</p>
+        <p>환경, 손님, 판매 물건은 모두 미생물의 영향을 받으며, 미생물에 따라 상태와 가치가 달라집니다.</p>
+        <p>자세한 작동 방식은 왼쪽 메뉴의 하위 항목에서 나누어 정리합니다.</p>
+      </section>
+
+
+      <section class="section">
+        <h2>동시 작동 구조</h2>
+        <p>미생물 시스템은 날씨, 손님, 판매 물건이 동시에 돌아가는 구조입니다.</p>
+        <p>보너스는 하나씩 따로 계산되는 것이 아니라, 현재 날씨의 미생물, 찾아온 손님의 미생물, 판매 물건의 미생물이 함께 맞물릴 때 결정됩니다.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>요소</th><th>역할</th></tr></thead>
+            <tbody>
+              <tr><td>날씨</td><td>현재 환경에 깔리는 미생물 속성을 정합니다.</td></tr>
+              <tr><td>손님</td><td>손님이 선호하거나 반응하는 미생물 성향을 가집니다.</td></tr>
+              <tr><td>판매 물건</td><td>상품 안에 들어간 미생물 속성으로 품질과 반응이 달라집니다.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="section">
+        <h2>미생물 종류 7종</h2>
+        <p>미생물은 총 7종으로 분류됩니다. 각 미생물은 고유한 속성과 감각 요소를 가지고 있으며, 환경, 손님, 상품을 평가하는 기준이 됩니다.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>종류</th><th>색상</th><th>맛</th><th>향</th><th>평가 느낌</th></tr></thead>
+            <tbody>
+              <tr><td><span class="microbe-name"><span class="microbe-icon microbe-fire"></span>불속성</span></td><td>빨간색</td><td>매운맛</td><td>과일향</td><td>강하고 자극적인 성향</td></tr>
+              <tr><td><span class="microbe-name"><span class="microbe-icon microbe-water"></span>물속성</span></td><td>주황색</td><td>짠맛</td><td>식물향</td><td>부드럽고 안정적인 성향</td></tr>
+              <tr><td><span class="microbe-name"><span class="microbe-icon microbe-electric"></span>전기속성</span></td><td>노란색</td><td>신맛</td><td>생선향</td><td>빠르고 민감한 성향</td></tr>
+              <tr><td><span class="microbe-name"><span class="microbe-icon microbe-soil"></span>흙속성</span></td><td>초록색</td><td>단맛</td><td>물향</td><td>기초와 성장에 가까운 성향</td></tr>
+              <tr><td><span class="microbe-name"><span class="microbe-icon microbe-air"></span>공기속성</span></td><td>파란색</td><td>감칠맛</td><td>고기향</td><td>확산과 순환에 가까운 성향</td></tr>
+              <tr><td><span class="microbe-name"><span class="microbe-icon microbe-light"></span>빛속성</span></td><td>남색</td><td>지방맛</td><td>석유향</td><td>고급화와 에너지에 가까운 성향</td></tr>
+              <tr><td><span class="microbe-name"><span class="microbe-icon microbe-machine"></span>기계속성</span></td><td>보라색</td><td>쓴맛</td><td>기계향</td><td>가공과 기술에 가까운 성향</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section class="section">
+        <h2>BIO MONITOR</h2>
+        <img class="entry-image" src="assets/bio_monitor_redraw.png" alt="BIO MONITOR UI">
+        <p>BIO MONITOR에서는 현재 미생물 상태를 확인할 수 있습니다.</p>
+        <p>7종 미생물이 각각 얼마나 적용되어 있는지 퍼센트로 표시됩니다.</p>
+        <p>플레이어는 이 퍼센트를 보고 오늘 어떤 미생물이 강한지 확인하고, 생산할 물건과 판매 전략을 정할 수 있습니다.</p>
+      </section>
+      <section class="section">
+        <h2>동작 원리</h2>
+        <p>하루에 한 번 미생물이 바뀝니다.</p>
+        <p>미생물 7개를 주파수로 돌려서 그날의 <strong>TOP 3 미생물</strong>을 만듭니다.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>단계</th><th>설명</th></tr></thead>
+            <tbody>
+              <tr><td>1. 하루 시작</td><td>하루가 시작되면 미생물 상태가 새로 정해집니다.</td></tr>
+              <tr><td>2. 주파수 계산</td><td>7종 미생물을 주파수 기준으로 돌려 그날의 TOP 3를 뽑습니다.</td></tr>
+              <tr><td>3. 생산 버프</td><td>그날의 TOP 3 미생물과 맞는 물건을 생산하면 버프를 받습니다.</td></tr>
+              <tr><td>4. 손님 분포</td><td>손님은 주파수로 뽑힌 TOP 3를 100%로 분할한 비율만큼 찾아옵니다.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>예를 들어 그날의 TOP 3가 불, 물, 기계 미생물이라면 손님도 이 세 미생물 비율에 맞춰 방문합니다.</p>
+        <p>플레이어는 그날의 TOP 3 미생물에 맞는 판매 물건을 준비해 생산 버프와 손님 수요를 동시에 노릴 수 있습니다.</p>
+      </section>
+    </main>
+  </div>
+  <script>
+    const page = document.body.dataset.page;
+    document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('active', a.dataset.page === page));
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
