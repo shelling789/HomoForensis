@@ -286,6 +286,23 @@ td { color: var(--ink); }
 .core-summary strong {
   color: var(--ink);
 }
+
+.doc-image {
+  margin: 14px 0 20px;
+}
+.doc-image img {
+  display: block;
+  width: min(100%, 760px);
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+.doc-image figcaption {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
 @media (max-width: 760px) {
   .core-emoji-route {
     grid-template-columns: 1fr;

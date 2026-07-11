@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>회사</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body data-page="company">
+  <div class="layout">
+<aside class="sidebar">
+  <div class="logo">
+    <strong>게임 시스템 도감</strong>
+    <span>Production Codex</span>
+  </div>
+  <nav class="nav">
+    <a href="index.html" data-page="index">홈</a>
+    <a href="world.html" data-page="world">스토리</a>
+    <a href="core.html" data-page="core">코어 시스템</a><a class="sub-nav" href="company.html" data-page="company">회사</a><a class="sub-nav" href="social_policy.html" data-page="social-policy">사회정책</a><a class="sub-nav" href="music_system.html" data-page="music-system">음악</a><a class="sub-nav" href="product_architecture.html" data-page="product-architecture">제품 아키텍쳐</a><a class="sub-nav" href="dna_architecture.html" data-page="dna-architecture">DNA 아키텍쳐</a><a class="sub-nav" href="microbe_system.html" data-page="microbe-system">미생물 시스템</a><a href="sub_system.html" data-page="sub-system">서브 시스템</a><a class="sub-nav" href="unlock.html" data-page="unlock">세계여행(언락)</a><a class="sub-nav" href="memo_serial.html" data-page="memo-serial">메모시리얼</a><a class="sub-nav" href="blueprint.html" data-page="blueprint">블루프린트</a><a class="sub-nav" href="advertising.html" data-page="advertising">광고</a><a class="sub-nav" href="news.html" data-page="news">뉴스</a><a class="sub-nav" href="building.html" data-page="building">빌딩</a><a class="sub-nav" href="bio_core.html" data-page="bio-core">바이오 코어</a><a class="sub-nav" href="storage_system.html" data-page="storage-system">스토리지</a><a class="sub-nav" href="daily_events.html" data-page="daily-events">데일리</a><a class="sub-nav" href="product_upgrade.html" data-page="product-upgrade">제품 업그레이드</a>
+    <a href="essential.html" data-page="essential">필수요소</a>
+    <span class="nav-label">1. 생산/판매</span>
+    <a class="sub-nav" href="essential_factory.html" data-page="essential-factory">공장</a>
+    <a class="sub-nav" href="essential_farm.html" data-page="essential-farm">농장</a>
+    <a class="sub-nav" href="essential_shop.html" data-page="essential-shop">상점</a>
+    <span class="nav-label">2. 연구/군체</span>
+    <a class="sub-nav" href="essential_lab.html" data-page="essential-lab">연구소</a>
+    <a class="sub-nav" href="essential_ant_nest.html" data-page="essential-ant-nest">개미굴</a>
+    <span class="nav-label">3. 특수 지역</span>
+    <a class="sub-nav" href="essential_field_boss.html" data-page="essential-field-boss">필드장</a>
+    <a class="sub-nav" href="essential_star.html" data-page="essential-star">항성</a>
+    <a class="sub-nav" href="essential_black_hole.html" data-page="essential-black-hole">블랙홀</a>
+  </nav>
+</aside>
+    <main class="content">
+      <header class="page-head">
+        <p class="kicker">Core System</p>
+        <h1>회사</h1>
+      </header>
+<section class="section">
+<h2>1. 진입 경로</h2>
+<p>회사는 코어 시스템 메뉴에서 들어간다.</p>
+<pre><code>홈
+→ 코어 시스템
+→ 회사</code></pre>
+<p><code>회사</code> 메뉴는 회사 설립, 운영, 레시피 거래, 자회사 분할, 회사 매각을 관리하는 전체 회사 시스템의 입구다.</p>
+</section>
+<section class="section">
+<h2>2. 최초 진입</h2><figure class="doc-image"><img src="assets/company_system/Company_Founding.png" alt="2. 최초 진입"><figcaption>2. 최초 진입</figcaption></figure>
+<p>아직 설립한 회사가 없다면 <code>회사</code> 메뉴를 눌렀을 때 바로 회사 설립 화면으로 들어간다.</p>
+<pre><code>코어 시스템
+→ 회사
+→ 회사 설립
+→ 핵심 아이템 6개 선택
+→ 회사 이름 결정
+→ 회사 생성</code></pre>
+<h3>회사 시스템 해금 조건</h3>
+<p>게임 시작 후 게임 시간으로 6개월이 지나야 한다.</p>
+<p>회사를 설립할 수 있는 자금을 보유해야 한다.</p>
+<p>두 조건을 충족하면 코어 시스템의 회사 메뉴가 해금된다.</p>
+<p>회사 메뉴가 열린 뒤 설립 비용을 지불하면 회사를 만들 수 있다.</p>
+<h3>회사 작동원리</h3>
+<ul>
+<li>핵심 아이템 6개를 선택한다.</li>
+<li>선택한 아이템은 회사의 주력 상품이 된다.</li>
+<li>회사 이름을 정한다.</li>
+<li>선택한 상품과 레시피를 기반으로 회사 가치와 수익 구조가 형성된다.</li>
+</section>
+<section class="section">
+<h2>3. 회사 설립 이후 진입</h2><figure class="doc-image"><img src="assets/company_system/Owned_Company_List.png" alt="3. 회사 설립 이후 진입"><figcaption>3. 회사 설립 이후 진입</figcaption></figure>
+<p>회사를 한 번이라도 설립했다면 이후에는 <code>회사</code> 메뉴를 눌렀을 때 보유 회사 목록으로 들어간다.</p>
+<pre><code>코어 시스템
+→ 회사
+→ 보유 회사
+→ 회사 선택
+→ 회사 상세</code></pre>
+<p>보유 회사 목록에서는 본회사와 자회사를 함께 확인한다.</p>
+</section>
+<section class="section">
+<h2>4. 회사 내부 메뉴</h2>
+<pre><code>회사
+├ 회사 설립
+├ 보유 회사
+├ 레시피 거래
+├ 자회사 관리
+└ 회사 매각</code></pre>
+<h3>회사 설립</h3>
+<p>새로운 회사를 만든다.</p>
+<p>회사 하나당 핵심 아이템 6개를 선택한다.</p>
+<h3>보유 회사</h3>
+<p>현재 소유한 모든 회사를 확인한다.</p>
+<p>회사를 선택하면 해당 회사의 상세 운영 화면으로 들어간다.</p>
+<h3>레시피 거래</h3>
+<p>보유한 레시피의 라이선스를 판매하거나 소유권을 완전히 매각한다.</p>
+<h3>자회사 관리</h3>
+<p>기존 회사의 상품과 레시피 일부를 분리해 자회사를 설립하고 관리한다.</p>
+<h3>회사 매각</h3>
+<p>보유 회사를 다른 기업이나 투자자에게 통째로 매각한다.</p>
+</section>
+<section class="section">
+<h2>5. 회사 상세 화면</h2>
+<pre><code>회사 상세
+├ 주력 상품 6개
+├ 보유 레시피
+├ 로열티 수익
+├ 세금
+├ 회사 가치
+├ 기업 신뢰도
+├ 시장 반응성
+├ 레시피 관리
+├ 자회사 분할
+└ 회사 매각</code></pre>
+<h3>주력 상품 6개</h3>
+<p>회사 설립 시 선택한 핵심 상품을 표시한다.</p>
+<p>상품의 판매 실적과 시장 평가가 회사 가치에 반영된다.</p>
+<h3>보유 레시피</h3>
+<p>회사가 소유한 레시피와 현재 사용 중인 생산권을 확인한다.</p>
+<h3>로열티 수익</h3>
+<p>상품, 레시피, 브랜드, 생산권 사용으로 발생하는 반복 수익을 표시한다.</p>
+<h3>세금</h3>
+<p>회사 수익 중 국가에 납부해야 하는 금액을 표시한다.</p>
+<h3>회사 가치</h3>
+<p>상품 실적, 레시피 가치, 로열티, 신뢰도, 반응성, 성장 가능성을 종합한 회사의 평가 금액이다.</p>
+<h3>기업 신뢰도</h3>
+<p>소비자, 투자자, 거래 상대가 회사를 얼마나 안정적이고 믿을 수 있다고 보는지를 나타낸다.</p>
+<h3>시장 반응성</h3>
+<p>신제품, 가격 변경, 광고, 유행, 사회정책 변화에 시장이 얼마나 빠르고 크게 반응하는지를 나타낸다.</p>
+<h3>레시피 관리</h3>
+<p>레시피를 직접 사용할지, 라이선스로 판매할지, 완전히 매각할지 결정한다.</p>
+<h3>자회사 분할</h3>
+<p>일부 상품과 레시피를 분리해 새로운 자회사를 만든다.</p>
+<h3>회사 매각</h3>
+<p>회사를 계속 운영하지 않고 현재 가치에 따라 통째로 판매한다.</p>
+</section>
+<section class="section">
+<h2>6. 핵심 아이템 6개</h2><figure class="doc-image"><img src="assets/company_system/Core_Product_Selection.png" alt="6. 핵심 아이템 6개"><figcaption>6. 핵심 아이템 6개</figcaption></figure>
+<p>플레이어는 회사마다 핵심 아이템 6개를 선택한다.</p>
+<p>선택한 아이템은 다음 요소에 영향을 준다.</p>
+<li>회사의 주력 상품</li>
+<li>회사 브랜드 성격</li>
+<li>주요 고객층</li>
+<li>수익 구조</li>
+<li>시장 반응성</li>
+<li>회사 가치</li>
+<li>자회사 분할 방향</li>
+<li>회사 매각가</li>
+<p>아이템 6개 조합에 따라 회사마다 다른 성격과 시장 위치를 가지게 된다.</p>
+</section>
+<section class="section">
+<h2>7. 로열티</h2><figure class="doc-image"><img src="assets/company_system/Royalty_Income.png" alt="7. 로열티"><figcaption>7. 로열티</figcaption></figure>
+<p>회사는 상품과 레시피를 통해 지속적인 로열티 수익을 얻는다.</p>
+<h3>로열티 발생 대상</h3>
+<li>주력 상품 판매</li>
+<li>레시피 사용권</li>
+<li>생산권</li>
+<li>브랜드 사용권</li>
+<li>자회사에 제공한 기술과 레시피</li>
+<p>로열티는 회사를 계속 보유할 이유가 되는 반복 수익이다.</p>
+</section>
+<section class="section">
+<h2>8. 세금과 수익 배분</h2><figure class="doc-image"><img src="assets/company_system/Tax_And_Revenue_Share.png" alt="8. 세금과 수익 배분"><figcaption>8. 세금과 수익 배분</figcaption></figure>
+<p>회사는 발생한 수익 중 일부를 국가에 세금으로 납부한다.</p>
+<li>기본 세율은 30%다.</li>
+<li>회사 가치가 특정 기준을 넘으면 회사가 가져가는 수익 비율이 최대 50%까지 상승할 수 있다.</li>
+<li>자회사를 설립하거나 사업을 분할하면 본회사에 집중되던 수익 비율이 약 30% 수준으로 다시 낮아질 수 있다.</li>
+<p>세율과 회사 수익 배분율은 서로 다른 값으로 계산한다.</p>
+<pre><code>총수익
+→ 세금 차감
+→ 회사 수익 배분
+→ 플레이어 실수익</code></pre>
+</section>
+<section class="section">
+<h2>9. 레시피 거래</h2><figure class="doc-image"><img src="assets/company_system/Recipe_Trading.png" alt="9. 레시피 거래"><figcaption>9. 레시피 거래</figcaption></figure>
+<p>레시피는 회사의 생산 수단이면서 거래 가능한 자산이다.</p>
+<h3>레시피 라이선스</h3>
+<li>소유권은 유지한다.</li>
+<li>다른 회사에 사용 권한만 제공한다.</li>
+<li>계약 기간 동안 로열티를 받는다.</li>
+<li>장기적인 반복 수익을 얻을 수 있다.</li>
+<h3>레시피 매각</h3>
+<li>레시피 소유권을 완전히 넘긴다.</li>
+<li>큰 금액을 일시적으로 받는다.</li>
+<li>매각 후에는 해당 레시피의 권리를 잃는다.</li>
+<li>해당 레시피에서 더 이상 로열티를 받을 수 없다.</li>
+</section>
+<section class="section">
+<h2>10. 자회사 설립과 사업 분할</h2><figure class="doc-image"><img src="assets/company_system/Subsidiary_Management.png" alt="10. 자회사 설립과 사업 분할"><figcaption>10. 자회사 설립과 사업 분할</figcaption></figure>
+<p>회사가 일정 규모 이상 성장하면 일부 사업을 분리해 자회사를 설립할 수 있다.</p>
+<h3>분할 대상</h3>
+<li>특정 상품</li>
+<li>특정 상품군</li>
+<li>레시피</li>
+<li>생산권</li>
+<li>브랜드</li>
+<li>시장 권역</li>
+<h3>분할 효과</h3>
+<li>한 회사에 집중된 상품과 수익을 나눌 수 있다.</li>
+<li>자회사를 별도로 성장시킬 수 있다.</li>
+<li>회사별로 독립적인 신뢰도와 반응성을 가질 수 있다.</li>
+<li>자회사만 따로 매각할 수 있다.</li>
+<li>본회사의 수익 집중도는 낮아질 수 있다.</li>
+<pre><code>본회사
+→ 상품과 레시피 일부 분리
+→ 자회사 설립
+→ 자회사 독립 성장
+→ 유지 또는 매각</code></pre>
+</section>
+<section class="section">
+<h2>11. 회사 매각</h2><figure class="doc-image"><img src="assets/company_system/Company_Sale.png" alt="11. 회사 매각"><figcaption>11. 회사 매각</figcaption></figure>
+<p>플레이어는 성장시킨 회사를 통째로 매각할 수 있다.</p>
+<h3>회사 매각가에 반영되는 요소</h3>
+<li>주력 상품 판매 실적</li>
+<li>보유 레시피 가치</li>
+<li>로열티 수익</li>
+<li>회사 가치</li>
+<li>기업 신뢰도</li>
+<li>시장 반응성</li>
+<li>자회사 보유 현황</li>
+<li>미래 성장 가능성</li>
+<p>플레이어는 회사를 계속 운영해 반복 수익을 받을지, 가치가 높을 때 일시금으로 매각할지 결정한다.</p>
+</section>
+<section class="section">
+<h2>12. 경영 원칙</h2>
+<p>회사 운영에는 다음 분야의 원칙이 적용된다.</p>
+<li>전략경영</li>
+<li>기업재무</li>
+<li>기술경영</li>
+<li>지식재산권</li>
+<li>조세와 회계</li>
+<li>기업 인수합병</li>
+<li>기업지배구조</li>
+<li>사업 포트폴리오 관리</li>
+<p>플레이어가 경영 원칙과 시장 기준을 지키면 기업 신뢰도와 시장 반응성이 상승한다.</p>
+<p>반대로 무리한 사업 분할, 품질 저하, 불공정 거래, 계약 위반 등이 발생하면 신뢰도와 반응성이 하락할 수 있다.</p>
+</section>
+<section class="section">
+<h2>13. 기업 신뢰도</h2><figure class="doc-image"><img src="assets/company_system/Corporate_Trust.png" alt="13. 기업 신뢰도"><figcaption>13. 기업 신뢰도</figcaption></figure>
+<p>기업 신뢰도는 소비자, 투자자, 거래 상대가 회사를 얼마나 믿는지를 나타낸다.</p>
+<h3>신뢰도 상승 효과</h3>
+<li>신제품 초기 판매량 증가</li>
+<li>장기 고객 증가</li>
+<li>투자자 평가 상승</li>
+<li>레시피 라이선스 계약 증가</li>
+<li>회사 매각가 상승</li>
+<li>자회사 평가 상승</li>
+<h3>신뢰도 하락 원인</h3>
+<li>품질 저하</li>
+<li>계약 위반</li>
+<li>과도한 가격 인상</li>
+<li>무리한 사업 분할</li>
+<li>반복적인 회사 매각</li>
+<li>경영 원칙 위반</li>
+</section>
+<section class="section">
+<h2>14. 시장 반응성</h2><figure class="doc-image"><img src="assets/company_system/Market_Responsiveness.png" alt="14. 시장 반응성"><figcaption>14. 시장 반응성</figcaption></figure>
+<p>시장 반응성은 회사의 행동에 소비자와 시장이 얼마나 빠르고 크게 반응하는지를 나타낸다.</p>
+<h3>반응성 상승 효과</h3>
+<li>신제품 수요가 빠르게 증가</li>
+<li>광고 효과가 빠르게 확산</li>
+<li>가격 변경이 판매량에 빠르게 반영</li>
+<li>유행 변화가 빠르게 적용</li>
+<li>사회정책 효과가 빠르게 적용</li>
+<li>레시피 구매 제안 증가</li>
+<li>투자 제안 증가</li>
+<li>회사 매각 제안 증가</li>
+<p>시장 반응성은 판매량 자체가 아니라 시장 변화가 적용되는 속도와 강도를 나타내는 지표다.</p>
+</section>
+<section class="section">
+<h2>15. 전체 진행 흐름</h2>
+<pre><code>코어 시스템
+→ 회사
+→ 핵심 아이템 6개 선택
+→ 회사 설립
+→ 상품 판매
+→ 로열티 수익 발생
+→ 세금 납부
+→ 회사 가치 상승
+→ 레시피 라이선스 또는 매각
+→ 자회사 설립과 사업 분할
+→ 회사별 성장
+→ 자회사 또는 전체 회사 매각</code></pre>
+</section>
+<section class="section">
+<h2>메뉴 설명</h2>
+<h3>회사</h3>
+<p>핵심 아이템 6개를 선택해 회사를 설립합니다. 상품과 레시피에서 로열티를 얻고, 레시피 라이선스 판매, 자회사 분할, 회사 매각을 통해 수익 구조를 확장할 수 있습니다. 경영 원칙과 시장 기준을 지키면 기업 신뢰도와 시장 반응성이 상승합니다.</p>
+</section>
+    </main>
+  </div>
+<script>
+    const page = document.body.dataset.page;
+    document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('active', a.dataset.page === page));
+  </script>
+</body>
+</html>

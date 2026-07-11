@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>게임 시스템 도감</title>
+  <title>뉴스</title>
   <link rel="stylesheet" href="site.css">
 </head>
-<body data-page="index">
+<body data-page="news">
   <div class="layout">
 <aside class="sidebar">
   <div class="logo">
@@ -31,84 +31,20 @@
     <a class="sub-nav" href="essential_black_hole.html" data-page="essential-black-hole">블랙홀</a>
   </nav>
 </aside>
-        <main class="content">
-      <header class="page-head home-head">
-        <img class="game-icon" src="assets/game_icon.png" alt="게임 아이콘">
-        <div>
-          <h1>Homo Forensis</h1>
-          <p class="company-name">ON MY WAY</p>
-        </div>
+    <main class="content">
+      <header class="page-head">
+        <p class="kicker">Sub System</p>
+        <h1>뉴스</h1>
       </header>
-
-      <section class="section main-visual-section">
-        <div class="main-visual">
-          <img src="assets/title_screen.png" alt="Homo Forensis 타이틀 화면">
-        </div>
-      </section>
       <section class="section">
-        <h2>개요</h2>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>항목</th><th>내용</th></tr></thead>
-            <tbody>
-              <tr><td>장르</td><td>타이쿤 · 시뮬레이션 · SF</td></tr>
-              <tr><td>플랫폼</td><td>PC</td></tr>
-              <tr><td>설명</td><td>플레이어는 생산, 공정, 판매 3가지 시스템을 운영하며 시설과 산업을 확장합니다.</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>핵심 재미</h2>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>재미 요소</th><th>설명</th></tr></thead>
-            <tbody>
-              <tr><td>확장</td><td>작은 시설에서 시작해 농장, 공장, 상점으로 산업을 넓혀갑니다.</td></tr>
-              <tr><td>연결</td><td>생산한 재료가 공정을 거쳐 상품이 되고, 상점에서 돈으로 바뀝니다.</td></tr>
-              <tr><td>해금</td><td>새로운 시설, 방식, 시스템을 하나씩 열어가며 플레이 루트가 늘어납니다.</td></tr>
-            </tbody>
-          </table>
-        </div>
+        <h2>세계 소식</h2>
+        <p>산업과 사회에서 발생한 변화, 사건과 정책 소식을 확인합니다.</p>
       </section>
     </main>
   </div>
-  <script>
+<script>
     const page = document.body.dataset.page;
     document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('active', a.dataset.page === page));
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

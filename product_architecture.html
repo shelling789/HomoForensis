@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>제품 아키텍쳐</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body data-page="product-architecture">
+  <div class="layout">
+<aside class="sidebar">
+  <div class="logo">
+    <strong>게임 시스템 도감</strong>
+    <span>Production Codex</span>
+  </div>
+  <nav class="nav">
+    <a href="index.html" data-page="index">홈</a>
+    <a href="world.html" data-page="world">스토리</a>
+    <a href="core.html" data-page="core">코어 시스템</a><a class="sub-nav" href="company.html" data-page="company">회사</a><a class="sub-nav" href="social_policy.html" data-page="social-policy">사회정책</a><a class="sub-nav" href="music_system.html" data-page="music-system">음악</a><a class="sub-nav" href="product_architecture.html" data-page="product-architecture">제품 아키텍쳐</a><a class="sub-nav" href="dna_architecture.html" data-page="dna-architecture">DNA 아키텍쳐</a><a class="sub-nav" href="microbe_system.html" data-page="microbe-system">미생물 시스템</a><a href="sub_system.html" data-page="sub-system">서브 시스템</a><a class="sub-nav" href="unlock.html" data-page="unlock">세계여행(언락)</a><a class="sub-nav" href="memo_serial.html" data-page="memo-serial">메모시리얼</a><a class="sub-nav" href="blueprint.html" data-page="blueprint">블루프린트</a><a class="sub-nav" href="advertising.html" data-page="advertising">광고</a><a class="sub-nav" href="news.html" data-page="news">뉴스</a><a class="sub-nav" href="building.html" data-page="building">빌딩</a><a class="sub-nav" href="bio_core.html" data-page="bio-core">바이오 코어</a><a class="sub-nav" href="storage_system.html" data-page="storage-system">스토리지</a><a class="sub-nav" href="daily_events.html" data-page="daily-events">데일리</a><a class="sub-nav" href="product_upgrade.html" data-page="product-upgrade">제품 업그레이드</a>
+    <a href="essential.html" data-page="essential">필수요소</a>
+    <span class="nav-label">1. 생산/판매</span>
+    <a class="sub-nav" href="essential_factory.html" data-page="essential-factory">공장</a>
+    <a class="sub-nav" href="essential_farm.html" data-page="essential-farm">농장</a>
+    <a class="sub-nav" href="essential_shop.html" data-page="essential-shop">상점</a>
+    <span class="nav-label">2. 연구/군체</span>
+    <a class="sub-nav" href="essential_lab.html" data-page="essential-lab">연구소</a>
+    <a class="sub-nav" href="essential_ant_nest.html" data-page="essential-ant-nest">개미굴</a>
+    <span class="nav-label">3. 특수 지역</span>
+    <a class="sub-nav" href="essential_field_boss.html" data-page="essential-field-boss">필드장</a>
+    <a class="sub-nav" href="essential_star.html" data-page="essential-star">항성</a>
+    <a class="sub-nav" href="essential_black_hole.html" data-page="essential-black-hole">블랙홀</a>
+  </nav>
+</aside>
+    <main class="content">
+      <header class="page-head">
+        <p class="kicker">Core System</p>
+        <h1>제품 아키텍쳐</h1>
+      </header>
+<section class="section">
+<h2>진입 경로</h2>
+<pre><code>홈
+→ 코어 시스템
+→ 제품 아키텍처</code></pre>
+<p>제품 아키텍처에서는 미생물, 자원, 일반 업그레이드, 최종 업그레이드를 순서대로 해금하고 제품의 성능을 강화한다.</p>
+</section>
+<section class="section">
+<h2>기본 구조</h2>
+<p>제품 아키텍처는 4단계로 구성된다.</p>
+<pre><code>1단계: 미생물
+→ 2단계: 자원
+→ 3단계: 일반 업그레이드
+→ 4단계: 최종 업그레이드</code></pre>
+<p>이전 단계를 먼저 해금해야 다음 단계로 진행할 수 있다.</p>
+</section>
+<section class="section">
+<h2>화면 구성</h2>
+<h3>왼쪽: 선택한 업그레이드</h3>
+<p>현재 선택한 제품과 업그레이드 정보를 표시한다.</p>
+<h3>표시 정보</h3>
+<ul>
+<li>제품 아이콘</li>
+<li>제품 이름</li>
+<li>제품 설명</li>
+<li>적용 효과</li>
+<li>업그레이드 버튼</li>
+<p>예시:</p>
+<pre><code>BeginnerLunchbox(1st)
+
+Freshness Duration +10%
+Product Value +3%</code></pre>
+<h3>오른쪽: 업그레이드 단계</h3>
+<p>제품에 적용할 업그레이드 재료와 해금 상태를 표시한다.</p>
+<pre><code>Step 1: Microbes
+Step 2: Resources
+Step 3: Standard Upgrades
+Step 4: Final Upgrades</code></pre>
+<p>잠긴 단계에는 먼저 해금해야 하는 이전 단계가 표시된다.</p>
+<pre><code>Unlock Step 1 first.
+Unlock Step 2 first.
+Unlock Step 3 first.</code></pre>
+</section>
+<section class="section">
+<h2>1단계: 미생물</h2>
+<p>제품에 적용된 미생물의 형태를 변경한다.</p>
+<p>처음에는 기존 미생물 형태 하나만 적용되어 있으며, 업그레이드를 통해 다른 형태를 추가할 수 있다.</p>
+<h3>예시</h3>
+<pre><code>기존 형태: 불
+→ 물 형태 추가
+→ 전기 형태 추가
+→ 불 + 물 + 전기</code></pre>
+<li>하나의 제품에 적용할 수 있는 미생물 형태는 최대 3개다.</li>
+<li>기존 형태는 유지하면서 새로운 형태를 추가한다.</li>
+<li>선택한 미생물 형태 조합에 따라 제품의 특성과 적용 효과가 달라진다.</li>
+<li>미생물 단계가 추가될 때마다 해당 단계가 새로운 레시피로 등록된다.</li>
+<li>1단계, 2단계, 3단계, 4단계 결과물은 각각 별도의 레시피와 별도의 상품으로 등록된다.</li>
+<p>1단계 미생물 형태를 확정해야 2단계 자원 업그레이드가 열린다.</p>
+</section>
+<section class="section">
+<h2>2단계: 자원</h2>
+<p>제품에 자원 업그레이드를 적용한다.</p>
+<p>선택한 자원에 따라 다음 능력치 중 하나 이상을 증가시킨다.</p>
+<li>가격</li>
+<li>우선도</li>
+<li>가치</li>
+<li>효율</li>
+<p>2단계 자원 업그레이드를 적용해야 3단계 일반 업그레이드가 열린다.</p>
+</section>
+<section class="section">
+<h2>3단계: 일반 업그레이드</h2>
+<p>제품의 가격, 우선도, 가치, 효율을 추가로 강화한다.</p>
+<p>선택한 업그레이드에 따라 증가하는 능력치와 증가량이 달라진다.</p>
+<h3>강화 대상</h3>
+<li>가격</li>
+<li>우선도</li>
+<li>가치</li>
+<li>효율</li>
+<p>3단계 일반 업그레이드를 적용해야 4단계 최종 업그레이드가 열린다.</p>
+</section>
+<section class="section">
+<h2>4단계: 최종 업그레이드</h2>
+<p>제품의 가격, 우선도, 가치, 효율 중 선택한 방향을 최종적으로 강화한다.</p>
+<p>최종 업그레이드는 이전 단계보다 증가량이 크며, 제품의 최종 성능 방향을 결정한다.</p>
+<h3>강화 대상</h3>
+<li>가격</li>
+<li>우선도</li>
+<li>가치</li>
+<li>효율</li>
+</section>
+<section class="section">
+<h2>제품 평가 항목</h2>
+<p>각 단계에서 추가된 재료와 업그레이드는 다음 네 가지 항목으로 평가된다.</p>
+<h3>가격</h3>
+<p>상품의 실제 판매 가격에 영향을 준다.</p>
+<li>가격 평가가 높을수록 판매 가격이 증가한다.</li>
+<li>최대 판매 가격은 기본 가격의 2배다.</li>
+<li>단계별 구성품 가격의 합을 기준으로 최종 판매 가격이 계산된다.</li>
+<pre><code>최종 판매 가격
+= 구성품 가격 합계 &#215; 가격 평가 보정치
+
+최대 판매 가격
+= 기본 가격 &#215; 2</code></pre>
+<h3>우선도</h3>
+<p>상점에서 어떤 상품이 먼저 판매되는지를 결정한다.</p>
+<li>우선도가 높은 상품부터 먼저 판매된다.</li>
+<li>여러 상품이 동시에 판매 가능한 경우 우선도 수치가 높은 상품을 먼저 선택한다.</li>
+<li>우선도가 같으면 기존 판매 순서나 등록 순서를 따른다.</li>
+<h3>가치</h3>
+<p>상품이 박물관, 전시, 경매처럼 희소성과 평가액이 중요한 장소에서 받는 가격 배율에 영향을 준다.</p>
+<li>가치가 높을수록 박물관 전시 보상이 증가한다.</li>
+<li>경매에 출품했을 때 낙찰가 배율이 크게 증가한다.</li>
+<li>일반 상점 판매 가격보다 박물관과 경매에서 더 큰 효과를 가진다.</li>
+<pre><code>가치 증가
+→ 박물관 평가액 증가
+→ 경매 낙찰가 배율 증가</code></pre>
+<h3>효율</h3>
+<p>상품의 생산 효율에 영향을 준다.</p>
+<li>효율이 높을수록 생산 속도가 증가한다.</li>
+<li>제작 시간이 감소한다.</li>
+<li>동일한 시간 동안 더 많은 상품을 생산할 수 있다.</li>
+<pre><code>효율 증가
+→ 생산시간 감소
+→ 시간당 생산량 증가</code></pre>
+</section>
+<section class="section">
+<h2>단계별 레시피 등록</h2>
+<p>제품 아키텍처의 1단계부터 4단계까지는 각각 독립된 레시피로 등록된다.</p>
+<pre><code>1단계 상품
+→ 1단계 레시피 등록
+
+2단계 상품
+→ 2단계 레시피 등록
+
+3단계 상품
+→ 3단계 레시피 등록
+
+4단계 상품
+→ 4단계 레시피 등록</code></pre>
+<p>상위 단계 상품은 이전 단계 상품과 새로 추가된 업그레이드 재료를 조합해 제작한다.</p>
+<h3>가격 계산</h3>
+<p>각 단계 상품의 가격은 해당 상품을 구성하는 모든 재료와 이전 단계 상품 가격의 합으로 계산한다.</p>
+<pre><code>현재 단계 상품 가격
+= 이전 단계 상품 가격
++ 현재 단계에 추가된 재료 가격</code></pre>
+<p>예시:</p>
+<pre><code>1단계 가격
+= 기본 상품 가격 + 미생물 가격
+
+2단계 가격
+= 1단계 상품 가격 + 자원 가격
+
+3단계 가격
+= 2단계 상품 가격 + 일반 업그레이드 가격
+
+4단계 가격
+= 3단계 상품 가격 + 최종 업그레이드 가격</code></pre>
+<p>따라서 최종 4단계 상품 가격은 1단계부터 4단계까지 사용된 모든 구성품 가격의 합이 된다.</p>
+</section>
+<section class="section">
+<h2>업그레이드 적용 흐름</h2>
+<pre><code>제품 선택
+→ 1단계 미생물 선택
+→ 업그레이드 적용
+→ 2단계 자원 해금
+→ 3단계 일반 업그레이드 해금
+→ 4단계 최종 업그레이드 해금
+→ 제품 강화 완료</code></pre>
+</section>
+<section class="section">
+<h2>제품 선택</h2>
+<p>업그레이드할 제품을 먼저 선택한다.</p>
+<p>제품마다 적용 가능한 미생물, 자원, 일반 업그레이드, 최종 업그레이드가 다를 수 있다.</p>
+<p>제품의 1~7단계 생산체인과 제품 아키텍처의 4단계 업그레이드는 서로 다른 시스템이다.</p>
+<pre><code>1~7단계 생산체인
+= 세트 상품의 제작 및 연속 판매 구조
+
+4단계 제품 아키텍처
+= 개별 제품의 성능 강화 구조</code></pre>
+</section>
+<section class="section">
+<h2>메뉴 설명</h2>
+<h3>제품 아키텍처</h3>
+<p>제품에 미생물, 자원, 일반 업그레이드, 최종 업그레이드를 순서대로 적용합니다. 각 단계를 해금해 제품의 성능과 고유 효과를 강화할 수 있습니다.</p>
+</section>
+    </main>
+  </div>
+<script>
+    const page = document.body.dataset.page;
+    document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('active', a.dataset.page === page));
+  </script>
+</body>
+</html>
