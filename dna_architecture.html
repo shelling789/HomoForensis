@@ -6,7 +6,7 @@
   <title>DNA 아키텍쳐</title>
   <link rel="stylesheet" href="site.css">
 </head>
-<body data-page="dna_architecture">
+<body data-page="dna-architecture">
   <div class="layout">
 <aside class="sidebar">
   <div class="logo">
@@ -36,10 +36,252 @@
         <p class="kicker">Core System</p>
         <h1>DNA 아키텍쳐</h1>
       </header>
-      <section class="section">
-        <h2>생물 설계</h2>
-        <p>생물의 DNA 설계와 성장 방향을 구성하는 시스템입니다.</p>
-      </section>
+<section class="section">
+<figure class="doc-image"><img src="assets/md_images/DNA_Architecture/DNA_Architecture_Menu.png" alt="진입 경로"><figcaption>진입 경로</figcaption></figure><h2>진입 경로</h2>
+<pre><code>홈
+→ 코어 시스템
+→ DNA 아키텍쳐</code></pre>
+<p>DNA 아키텍쳐 메뉴에서는 기반체, 유전자 재료, 기능 모듈, 변이 방식을 조합하여 새로운 DNA를 제작한다.</p>
+</section>
+<section class="section">
+<figure class="doc-image"><img src="assets/md_images/DNA_Architecture/DNA_Base_Organism.png" alt="기반체 선택"><figcaption>기반체 선택</figcaption></figure><h2>기본 구조</h2>
+<p>DNA 아키텍쳐는 완성된 DNA를 목록에서 선택하는 시스템이 아니다.</p>
+<p>플레이어가 여러 구성 요소를 단계별로 조합하여 서로 다른 기능과 위험도를 가진 DNA를 제작한다.</p>
+<pre><code>기반체 선택
+→ 유전자 재료 투입
+→ 기능 모듈 조합
+→ 변이 방식 선택
+→ 최종 DNA 생성</code></pre>
+<p>같은 기반체를 사용하더라도 투입한 재료, 기능 모듈, 변이 방식에 따라 서로 다른 DNA가 생성된다.</p>
+</section>
+<section class="section">
+<h2>기반체 선택</h2>
+<p>플레이어는 제작할 DNA의 기본 계열을 선택한다.</p>
+<p>기반체는 최종 DNA의 기본 성향과 적용 방향을 결정한다.</p>
+<h3>미생물 기반</h3>
+<ul>
+<li>생산</li>
+<li>발효</li>
+<li>환경 적응</li>
+<li>상품 변화</li>
+</ul>
+<h3>식물 기반</h3>
+<ul>
+<li>성장</li>
+<li>재생</li>
+<li>자원 생산</li>
+<li>지속 효과</li>
+</ul>
+<h3>동물 기반</h3>
+<ul>
+<li>행동</li>
+<li>이동</li>
+<li>감각</li>
+<li>소비자 반응</li>
+</ul>
+<h3>합성 기반</h3>
+<ul>
+<li>복합 기능</li>
+<li>다른 계열 혼합</li>
+<li>높은 효율</li>
+<li>높은 불안정성</li>
+</ul>
+</section>
+<section class="section">
+<figure class="doc-image"><img src="assets/md_images/DNA_Architecture/DNA_Gene_Materials.png" alt="유전자 재료 투입"><figcaption>유전자 재료 투입</figcaption></figure><h2>유전자 재료 투입</h2>
+<p>플레이어는 DNA를 구성할 유전자 재료를 선택한다.</p>
+<p>유전자 재료마다 추가되는 성질과 역할이 다르다.</p>
+<h3>유전자 조각</h3>
+<p>특정 능력이나 효과를 추가한다.</p>
+<h3>배양액</h3>
+<p>DNA의 안정성과 제작 성공률을 높인다.</p>
+<h3>효소</h3>
+<p>유전자 결합 효율과 조합 성공률을 높인다.</p>
+<h3>세포 샘플</h3>
+<p>기반체의 성질을 강화하거나 다른 생물 계열의 특성을 추가한다.</p>
+<h3>미생물 샘플</h3>
+<p>발효, 생산, 환경 반응과 관련된 효과를 추가한다.</p>
+<h3>결정체</h3>
+<p>희귀 효과나 특수 속성이 발생할 가능성을 높인다.</p>
+<h3>합성 코어</h3>
+<p>서로 다른 기반체 계열이나 기능 모듈을 함께 사용할 수 있게 한다.</p>
+</section>
+<section class="section">
+<figure class="doc-image"><img src="assets/md_images/DNA_Architecture/DNA_Function_Modules.png" alt="기능 모듈 조합"><figcaption>기능 모듈 조합</figcaption></figure><h2>기능 모듈 조합</h2>
+<p>기능 모듈은 DNA가 실제로 강화하거나 변화시키는 효과를 결정한다.</p>
+<p>사용 가능한 기능 모듈은 다음과 같다.</p>
+<ul>
+<li>생산</li>
+<li>성장</li>
+<li>내성</li>
+<li>속도</li>
+<li>품질</li>
+<li>가치</li>
+<li>선호도</li>
+<li>환경 적응</li>
+<li>행동 변화</li>
+</ul>
+<p>여러 기능 모듈을 동시에 선택할 수 있지만 슬롯 수에는 제한이 있다.</p>
+<h3>조합 예시</h3>
+<pre><code>생산 + 품질
+성장 + 환경 적응
+선호도 + 행동 변화
+생산 + 속도
+품질 + 가치</code></pre>
+<p>모듈을 많이 넣을수록 효과 범위는 넓어지지만 안정성이 감소하거나 제작 비용이 증가할 수 있다.</p>
+</section>
+<section class="section">
+<figure class="doc-image"><img src="assets/md_images/DNA_Architecture/DNA_Mutation_Method.png" alt="변이 방식 선택"><figcaption>변이 방식 선택</figcaption></figure><h2>변이 방식 선택</h2>
+<p>변이 방식은 최종 DNA의 효과 강도, 안정성, 희귀도, 부작용을 결정한다.</p>
+<h3>안정 배양</h3>
+<ul>
+<li>성공률 증가</li>
+<li>안정성 증가</li>
+<li>효과 강도 감소</li>
+<li>부작용 감소</li>
+</ul>
+<h3>자연 변이</h3>
+<ul>
+<li>결과 수치가 일정 범위에서 변화</li>
+<li>희귀 특성 출현 가능</li>
+<li>안정성과 효과가 균형적</li>
+</ul>
+<h3>방사선 변이</h3>
+<ul>
+<li>효과 강도 증가</li>
+<li>희귀 특성 출현 확률 증가</li>
+<li>안정성 감소</li>
+<li>부작용 확률 증가</li>
+</ul>
+<h3>전기 자극</h3>
+<ul>
+<li>속도와 행동 관련 효과 강화</li>
+<li>적용 결과가 빠르게 나타남</li>
+<li>지속 시간이 감소할 수 있음</li>
+</ul>
+<h3>미생물 교차</h3>
+<ul>
+<li>미생물 관련 특성을 복합 적용</li>
+<li>생산과 환경 적응 효과 강화</li>
+<li>특정 조건에서 추가 변이 발생</li>
+</ul>
+<h3>합성 재조합</h3>
+<ul>
+<li>서로 다른 계열 기능 혼합</li>
+<li>강력한 복합 DNA 제작 가능</li>
+<li>제작 비용과 실패 위험 증가</li>
+</ul>
+</section>
+<section class="section">
+<figure class="doc-image"><img src="assets/md_images/DNA_Architecture/DNA_Result.png" alt="최종 DNA 생성"><figcaption>최종 DNA 생성</figcaption></figure><h2>최종 DNA 생성</h2>
+<p>최종 DNA는 선택한 구성 요소에 따라 자동으로 생성된다.</p>
+<pre><code>기반체
++ 유전자 재료
++ 기능 모듈
++ 변이 방식
+= 최종 DNA</code></pre>
+<h3>고효율 발효 DNA</h3>
+<pre><code>미생물 기반
++ 발효 유전자 조각
++ 배양액
++ 생산 모듈
++ 품질 모듈
++ 안정 배양</code></pre>
+<ul>
+<li>생산량 증가</li>
+<li>상품 가치 증가</li>
+<li>높은 안정성</li>
+<li>낮은 변이율</li>
+<li>적용 대상: 발효 상품</li>
+</ul>
+<h3>적응형 고속 성장 DNA</h3>
+<pre><code>식물 기반
++ 재생 세포 샘플
++ 성장 모듈
++ 환경 적응 모듈
++ 자연 변이</code></pre>
+<ul>
+<li>성장 속도 증가</li>
+<li>환경 적응 증가</li>
+<li>적용 대상: 식물과 농장 자원</li>
+</ul>
+<h3>소비 반응 증폭 DNA</h3>
+<pre><code>동물 기반
++ 감각 유전자 조각
++ 선호도 모듈
++ 행동 변화 모듈
++ 전기 자극</code></pre>
+<ul>
+<li>상품 선호도 증가</li>
+<li>구매 행동 발생률 증가</li>
+<li>적용 대상: 손님 행동</li>
+</ul>
+<h3>불안정 복합 DNA</h3>
+<pre><code>미생물 기반
++ 합성 코어
++ 생산 모듈
++ 행동 변화 모듈
++ 방사선 변이</code></pre>
+<ul>
+<li>생산량 크게 증가</li>
+<li>행동 변화 효과 추가</li>
+<li>낮은 안정성</li>
+<li>높은 변이율</li>
+<li>부작용 발생 확률 증가</li>
+</ul>
+</section>
+<section class="section">
+<figure class="doc-image"><img src="assets/md_images/DNA_Architecture/DNA_Status.png" alt="DNA 결과 정보"><figcaption>DNA 결과 정보</figcaption></figure><h2>DNA 결과 정보</h2>
+<p>DNA 화면에서는 다음 정보를 확인한다.</p>
+<ul>
+<li>DNA 이름</li>
+<li>기반체</li>
+<li>등급</li>
+<li>주요 효과</li>
+<li>보조 효과</li>
+<li>안정성</li>
+<li>변이율</li>
+<li>지속 시간</li>
+<li>적용 대상</li>
+<li>부작용</li>
+<li>조합 태그</li>
+<li>제작 비용</li>
+</ul>
+</section>
+<section class="section">
+<h2>제작 제한</h2>
+<p>DNA 제작에는 다음 슬롯 제한이 적용된다.</p>
+<pre><code>기반체 슬롯 1개
+유전자 재료 슬롯 2~4개
+기능 모듈 슬롯 1~3개
+변이 방식 1개</code></pre>
+<p>강력한 조합일수록 다음 요소가 증가한다.</p>
+<ul>
+<li>제작 비용</li>
+<li>제작 시간</li>
+<li>실패 확률</li>
+<li>변이율</li>
+<li>부작용</li>
+</ul>
+</section>
+<section class="section">
+<h2>전체 제작 흐름</h2>
+<pre><code>DNA 설계도 선택
+→ 기반체 선택
+→ 유전자 재료 투입
+→ 기능 모듈 선택
+→ 변이 방식 선택
+→ 예상 결과 확인
+→ DNA 제작
+→ DNA 라이브러리에 저장
+→ 적용 대상 선택
+→ 효과 발현</code></pre>
+</section>
+<section class="section">
+<h2>메뉴 설명</h2>
+<h3>DNA 아키텍쳐</h3>
+<p>기반체, 유전자 재료, 기능 모듈, 변이 방식을 조합하여 새로운 DNA를 제작합니다. 선택한 조합에 따라 DNA의 효과, 안정성, 변이율, 희귀도, 부작용이 달라집니다.</p>
+</section>
     </main>
   </div>
 <script>

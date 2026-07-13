@@ -289,11 +289,15 @@ td { color: var(--ink); }
 
 .doc-image {
   margin: 14px 0 20px;
+  overflow: visible;
 }
 .doc-image img {
   display: block;
-  width: min(100%, 760px);
+  width: auto;
+  max-width: 100%;
   height: auto;
+  max-height: none;
+  object-fit: contain;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
