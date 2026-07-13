@@ -6,7 +6,7 @@
   <title>스토리지</title>
   <link rel="stylesheet" href="site.css">
 </head>
-<body data-page="storage_system">
+<body data-page="storage-system">
   <div class="layout">
 <aside class="sidebar">
   <div class="logo">
@@ -32,14 +32,152 @@
   </nav>
 </aside>
     <main class="content">
-      <header class="page-head">
-        <p class="kicker">Sub System</p>
-        <h1>스토리지</h1>
-      </header>
-      <section class="section">
-        <h2>보관 관리</h2>
-        <p>생산한 자원과 상품의 보관 현황을 확인하고 물류 흐름을 관리합니다.</p>
-      </section>
+      <header class="page-head"><p class="kicker">Sub System</p><h1>스토리지</h1></header>
+<section class="section">
+<figure class="doc-image"><img src="assets/md_images/Storage/Storage_Main.png" alt="진입 경로"><figcaption>진입 경로</figcaption></figure><h2>진입 경로</h2>
+<pre><code>홈
+→ 서브 시스템
+→ 저장고</code></pre>
+<p>저장고에서는 발견하거나 획득한 자원, 제품, 미생물, 건물, 세트 아이템과 레시피 정보를 분류하여 확인한다.</p>
+</section>
+<section class="section">
+<h2>기본 구성</h2>
+<p>저장고는 상단 분류 탭과 하단 목록 영역으로 구성된다.</p>
+<pre><code>전체
+자원
+제품
+동인변이
+미생물
+맛과 향
+설치건물
+세트아이템</code></pre>
+<p>선택한 분류에 따라 저장된 항목 목록이 변경된다.</p>
+</section>
+<section class="section">
+<h2>전체 목록</h2>
+<p>전체 탭에서는 현재 저장고에 등록된 모든 항목을 카드 형식으로 확인한다.</p>
+<h3>표시 정보</h3>
+<ul>
+<li>항목 이미지</li>
+<li>항목 이름</li>
+<li>항목 종류</li>
+<li>발견 여부</li>
+<li>해금 여부</li>
+<li>현재 등록 수</li>
+<li>최대 저장 수</li>
+</ul>
+<pre><code>Codex List
+→ 발견한 항목 표시
+→ 미발견 항목은 물음표로 표시</code></pre>
+<p>화면 상단의 숫자는 현재 등록된 항목 수와 전체 항목 수를 나타낸다.</p>
+<p>예시:</p>
+<pre><code>128 / 256</code></pre>
+</section>
+<section class="section">
+<h2>분류 탭</h2>
+<p>저장고 항목은 종류별로 나누어 확인할 수 있다.</p>
+<h3>전체</h3>
+<p>모든 저장 항목을 표시한다.</p>
+<h3>자원</h3>
+<p>농장, 공장, 상점과 생산시설에서 사용하는 기본 재료를 표시한다.</p>
+<h3>제품</h3>
+<p>생산이 완료된 상품과 판매 가능한 제품을 표시한다.</p>
+<h3>동인변이</h3>
+<p>변이 또는 특수 조건으로 획득한 항목을 표시한다.</p>
+<h3>미생물</h3>
+<p>발견하거나 보유한 미생물 정보를 표시한다.</p>
+<h3>맛과 향</h3>
+<p>상품에 적용되는 맛과 향 관련 요소를 표시한다.</p>
+<h3>설치건물</h3>
+<p>농장, 공장, 상점, 개미굴, 연구소에 설치할 수 있는 건물을 표시한다.</p>
+<h3>세트아이템</h3>
+<p>단계별로 제작하거나 해금한 세트 상품을 표시한다.</p>
+</section>
+<section class="section">
+<h2>미발견 항목</h2>
+<p>아직 발견하지 않은 항목은 이미지와 이름 대신 물음표로 표시한다.</p>
+<pre><code>미발견 상태
+→ 물음표 카드 표시
+→ 조건 충족
+→ 항목 정보 해금</code></pre>
+<p>미발견 항목은 상세 정보와 제작 조건을 확인할 수 없다.</p>
+</section>
+<section class="section">
+<figure class="doc-image"><img src="assets/md_images/Storage/Storage_Recipe.png" alt="레시피 상세"><figcaption>레시피 상세</figcaption></figure><h2>레시피 상세</h2>
+<p>레시피 항목을 선택하면 해당 세트 상품의 상세 정보와 제작 트리를 확인한다.</p>
+<h3>레시피 목록</h3>
+<p>왼쪽 목록에서는 보유하거나 발견한 레시피를 확인한다.</p>
+<h3>표시 정보</h3>
+<ul>
+<li>레시피 아이콘</li>
+<li>레시피 이름</li>
+<li>보유 상태</li>
+<li>사용 가능 여부</li>
+</ul>
+</section>
+<section class="section">
+<h2>레시피 정보</h2>
+<p>오른쪽 상단에서는 선택한 레시피의 기본 정보를 확인한다.</p>
+<h3>표시 정보</h3>
+<ul>
+<li>레시피 이름</li>
+<li>단계</li>
+<li>카테고리</li>
+<li>상품 종류</li>
+<li>제작 설비</li>
+<li>사용 구역</li>
+<li>현재 생산 단계</li>
+</ul>
+<p>예시:</p>
+<pre><code>Classic Steak Set (3rd)
+카테고리: Cooking
+상품 종류: Steak
+제작 설비: Advanced Cooking Machine
+사용 구역: Cooking</code></pre>
+</section>
+<section class="section">
+<figure class="doc-image"><img src="assets/md_images/Storage/Storage_Combination_Detail.png" alt="스토리지 상세 제작 트리"><figcaption>스토리지 상세 제작 트리</figcaption></figure>
+<h2>상세 제작 트리</h2>
+<p>오른쪽 하단에서는 선택한 상품의 직접 재료와 생산 구조를 확인한다.</p>
+<pre><code>최종 상품
+→ 직접 필요한 중간 재료
+→ 기본 재료</code></pre>
+<p>대체 레시피는 표시하지 않고 현재 선택한 상품의 직접 생산 체인만 표시한다.</p>
+<h3>표시 정보</h3>
+<ul>
+<li>최종 상품</li>
+<li>중간 재료</li>
+<li>기본 재료</li>
+<li>재료 연결 관계</li>
+<li>제작 단계</li>
+</ul>
+</section>
+<section class="section">
+<h2>필터와 정렬</h2>
+<p>레시피 목록 상단의 선택 메뉴를 통해 표시 항목을 필터링하거나 정렬할 수 있다.</p>
+<p>예시:</p>
+<ul>
+<li>카테고리</li>
+<li>상품 종류</li>
+<li>제작 단계</li>
+<li>보유 상태</li>
+<li>사용 가능 여부</li>
+</ul>
+</section>
+<section class="section">
+<h2>전체 흐름</h2>
+<pre><code>저장고 진입
+→ 분류 탭 선택
+→ 저장 항목 확인
+→ 항목 선택
+→ 상세 정보 확인
+→ 레시피 선택 시 제작 트리 확인</code></pre>
+</section>
+<section class="section">
+<h2>메뉴 설명</h2>
+<h3>저장고</h3>
+<p>발견하거나 획득한 자원, 제품, 미생물, 건물, 세트 아이템과 레시피를 분류하여 확인합니다. 레시피를 선택하면 상품 정보와 직접 재료로 구성된 제작 트리를 볼 수 있습니다.</p>
+</section>
     </main>
   </div>
 <script>

@@ -32,12 +32,9 @@
   </nav>
 </aside>
     <main class="content">
-      <header class="page-head">
-        <p class="kicker">Sub System</p>
-        <h1>빌딩</h1>
-      </header>
+      <header class="page-head"><p class="kicker">Sub System</p><h1>빌딩</h1></header>
 <section class="section">
-<h2>진입 경로</h2>
+<figure class="doc-image"><img src="assets/md_images/Building/Installed_Building.png" alt="진입 경로"><figcaption>진입 경로</figcaption></figure><h2>진입 경로</h2>
 <pre><code>홈
 → 빌딩</code></pre>
 <p>빌딩 메뉴에서는 농장, 공장, 상점, 개미굴, 연구소에 설치된 시설을 한 번에 확인한다.</p>
@@ -62,15 +59,18 @@
 <li>상점</li>
 <li>개미굴</li>
 <li>연구소</li>
+</ul>
 <p>선택한 구역에 따라 왼쪽 대표 이미지와 오른쪽 시설 목록이 변경된다.</p>
 </section>
 <section class="section">
 <h2>구역 요약</h2>
 <p>화면 왼쪽에는 현재 선택한 구역의 대표 이미지와 전체 시설 현황이 표시된다.</p>
 <h3>표시 정보</h3>
+<ul>
 <li>설치된 건물 수</li>
 <li>풍년 효과 적용 수</li>
 <li>이벤트 효과 적용 수</li>
+</ul>
 <pre><code>TOTAL FACILITIES
 → 설치된 건물 수
 → 풍년 효과 적용 중
@@ -80,6 +80,7 @@
 <h2>설치된 시설 목록</h2>
 <p>화면 오른쪽에는 현재 구역에 설치된 시설이 목록으로 표시된다.</p>
 <h3>표시 정보</h3>
+<ul>
 <li>시설 아이콘</li>
 <li>설치 수량</li>
 <li>시설 이름</li>
@@ -88,6 +89,7 @@
 <li>시간당 생산량</li>
 <li>풍년 효과</li>
 <li>이벤트 효과</li>
+</ul>
 <p>예시:</p>
 <pre><code>곡물 농장
 LV.3
@@ -119,9 +121,11 @@ LV.3
 <h2>풍년 효과</h2>
 <p>풍년 효과는 시설의 생산 성능을 일시적으로 증가시키는 효과다.</p>
 <h3>표시 방식</h3>
+<ul>
 <li>풍년 효과 아이콘</li>
 <li>증가 비율</li>
 <li>현재 적용 여부</li>
+</ul>
 <p>예시:</p>
 <pre><code>풍년 효과 +20%</code></pre>
 <p>화면 왼쪽 요약에서는 현재 풍년 효과가 적용된 시설 수를 확인할 수 있다.</p>
@@ -130,11 +134,13 @@ LV.3
 <h2>이벤트 효과</h2>
 <p>시설에 현재 적용 중인 이벤트 효과를 표시한다.</p>
 <h3>예시</h3>
+<ul>
 <li>봄 축제</li>
 <li>생산 이벤트</li>
 <li>지역 이벤트</li>
 <li>사회정책 효과</li>
 <li>미생물 이벤트</li>
+</ul>
 <p>화면 왼쪽 요약에서는 이벤트 효과가 적용된 시설 수를 확인할 수 있다.</p>
 </section>
 <section class="section">
@@ -149,6 +155,108 @@ LV.3
 <h2>메뉴 설명</h2>
 <h3>빌딩</h3>
 <p>농장, 공장, 상점, 개미굴, 연구소에 설치된 시설을 확인합니다. 시설별 설치 수량, 레벨, 생산량, 풍년 효과와 이벤트 효과를 한 화면에서 관리할 수 있습니다.</p>
+</section>
+<section class="section">
+<h2>설치 빌딩 시스템</h2>
+</section>
+<section class="section">
+<figure class="doc-image"><img src="assets/md_images/Building/Installed_Building.png" alt="진입 경로"><figcaption>진입 경로</figcaption></figure><h2>진입 경로</h2>
+<pre><code>홈
+→ 서브 시스템
+→ 설치 빌딩</code></pre>
+<p>설치 빌딩 화면에서는 농장, 공장, 상점, 개미굴, 연구소에 설치된 시설과 현재 적용 중인 효과를 확인한다.</p>
+</section>
+<section class="section">
+<h2>기본 구조</h2>
+<p>설치 빌딩은 구역별로 설치된 건물과 시설의 상태를 확인하는 관리 화면이다.</p>
+<pre><code>구역 선택
+→ 설치된 시설 목록 확인
+→ 생산량 확인
+→ 풍년 효과 확인
+→ 이벤트 효과 확인</code></pre>
+</section>
+<section class="section">
+<h2>구역 선택</h2>
+<p>화면 상단에서는 확인할 구역을 선택한다.</p>
+<pre><code>농장
+공장
+상점
+개미굴
+연구소</code></pre>
+<p>선택한 구역에 따라 왼쪽 대표 이미지와 오른쪽 설치 시설 목록이 변경된다.</p>
+</section>
+<section class="section">
+<h2>설치된 시설 목록</h2>
+<p>오른쪽 목록에서는 현재 구역에 설치된 시설을 확인한다.</p>
+<h3>표시 정보</h3>
+<ul>
+<li>시설 번호</li>
+<li>시설 아이콘</li>
+<li>시설 이름</li>
+<li>시설 레벨</li>
+<li>시설 설명</li>
+<li>시간당 생산량</li>
+<li>풍년 효과</li>
+<li>이벤트 효과</li>
+</ul>
+<p>시설이 여러 개 설치되어 있다면 같은 종류의 시설도 각각 별도 항목으로 표시한다.</p>
+</section>
+<section class="section">
+<h2>생산량</h2>
+<p>각 시설이 시간당 생산하는 수량을 표시한다.</p>
+<pre><code>시설 생산량
+→ 시간당 생산량 계산
+→ 구역 전체 생산량에 합산</code></pre>
+<p>생산량은 시설 레벨, 미생물 효과, 풍년 효과, 이벤트 효과에 따라 달라질 수 있다.</p>
+</section>
+<section class="section">
+<h2>풍년 효과</h2>
+<p>현재 시설에 적용 중인 풍년 효과를 표시한다.</p>
+<p>예시:</p>
+<pre><code>생산량 +20%</code></pre>
+<p>풍년 효과가 적용 중인 시설은 아이콘과 증가 수치가 함께 표시된다.</p>
+</section>
+<section class="section">
+<h2>이벤트 효과</h2>
+<p>시설에 적용 중인 이벤트 효과를 확인한다.</p>
+<p>예시:</p>
+<pre><code>봄 축제
+생산 이벤트
+지역 이벤트
+사회정책 효과</code></pre>
+<p>이벤트 효과는 생산량, 생산시간, 품질, 자원 소비량에 영향을 줄 수 있다.</p>
+</section>
+<section class="section">
+<h2>전체 시설 정보</h2>
+<p>화면 왼쪽 하단에서는 현재 구역의 전체 시설 상태를 요약한다.</p>
+<h3>표시 정보</h3>
+<ul>
+<li>설치된 건물 수</li>
+<li>풍년 효과 적용 중인 시설 수</li>
+<li>이벤트 효과 적용 중인 시설 수</li>
+</ul>
+<pre><code>설치된 건물 수
+→ 현재 구역에 설치된 전체 시설 수
+
+풍년 효과 적용 중
+→ 풍년 효과가 적용된 시설 수
+
+이벤트 효과 적용 중
+→ 이벤트 효과가 적용된 시설 수</code></pre>
+</section>
+<section class="section">
+<h2>전체 흐름</h2>
+<pre><code>구역 선택
+→ 설치된 시설 목록 불러오기
+→ 시설별 생산량 확인
+→ 풍년 효과 확인
+→ 이벤트 효과 확인
+→ 전체 시설 수와 적용 효과 집계</code></pre>
+</section>
+<section class="section">
+<h2>메뉴 설명</h2>
+<h3>설치 빌딩</h3>
+<p>농장, 공장, 상점, 개미굴, 연구소에 설치된 시설을 확인합니다. 시설별 생산량, 레벨, 풍년 효과와 이벤트 효과를 확인하고 구역 전체의 적용 상태를 관리할 수 있습니다.</p>
 </section>
     </main>
   </div>
